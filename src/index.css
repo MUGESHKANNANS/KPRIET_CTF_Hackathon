@@ -1,0 +1,290 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 70% 2%;
+    --foreground: 0 0% 100%;
+
+    --card: 220 70% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 70% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 120 100% 68%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 220 70% 7%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 70% 12%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 120 100% 68%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 70% 15%;
+    --input: 220 70% 15%;
+    --ring: 120 100% 68%;
+
+    --radius: 0.5rem;
+  }
+  
+  @font-face {
+    font-family: 'Exploit';
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+    font-display: swap;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cyber-dark text-cyber-light overflow-x-hidden;
+    background-image: radial-gradient(rgba(92, 255, 92, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .font-exploit {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+@layer components {
+  .cyber-glitch-effect {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cyber-glitch-effect::before,
+  .cyber-glitch-effect::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+  }
+  
+  .cyber-glitch-effect::before {
+    color: #00fffc;
+    z-index: -1;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+  
+  .cyber-glitch-effect::after {
+    color: #ff00ff;
+    z-index: -2;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 5px rgba(92, 255, 92, 0.5), 0 0 10px rgba(92, 255, 92, 0.3);
+  }
+
+  .cyber-border {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .cyber-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #5CFF5C, transparent, #5CFF5C, transparent) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    animation: border-pulse 4s linear infinite;
+    z-index: -1;
+  }
+
+  .register-button {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .register-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(92, 255, 92, 0.5), rgba(92, 255, 92, 0.8));
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .register-button:hover::before {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(92, 255, 92, 0.4);
+  }
+
+  .cyber-box {
+    position: relative;
+    background: rgba(7, 12, 32, 0.8);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(92, 255, 92, 0.3);
+    overflow: hidden;
+  }
+
+  .cyber-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #5CFF5C, transparent);
+    animation: scan-line 3s linear infinite;
+  }
+
+  @keyframes scan-line {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(400px);
+    }
+  }
+
+  @keyframes border-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .network-node {
+    fill: #5CFF5C;
+    r: 3;
+    animation: pulse-green 2s infinite;
+  }
+
+  .network-line {
+    stroke: rgba(92, 255, 92, 0.7);
+    stroke-width: 1;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 200;
+    animation: network-flow 4s linear infinite;
+  }
+
+  .countdown-box {
+    animation: countdown 1s infinite;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes pulse-green {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(0.8);
+    }
+  }
+  
+  @keyframes network-flow {
+    0% {
+      stroke-dashoffset: 200;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes countdown {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(92, 255, 92, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(92, 255, 92, 0.5);
+    }
+  }
+  
+  @keyframes animate-fade-in-delay-1 {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-delay-1 {
+    animation: animate-fade-in-delay-1 0.8s ease-out 0.2s forwards;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: animate-fade-in-delay-1 0.8s ease-out 0.4s forwards;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: animate-fade-in-delay-1 0.8s ease-out 0.6s forwards;
+  }
+  
+  .animate-fade-in-delay-4 {
+    animation: animate-fade-in-delay-1 0.8s ease-out 0.8s forwards;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-pulse-green {
+    animation: pulse-green 2s infinite;
+  }
+}
