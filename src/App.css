@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+@import '@fontsource/hacked';
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ 
+  .font-hacked {
+    font-family: 'Hacked', sans-serif;
+  }
+
+  .font-glacial {
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+}
+

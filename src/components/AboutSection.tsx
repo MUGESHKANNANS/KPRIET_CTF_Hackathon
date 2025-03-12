@@ -39,17 +39,17 @@ const AboutSection = () => {
               
               <div className="mt-8 flex flex-wrap gap-4">
                 <div className="bg-cyber-dark rounded-lg p-4 border border-cyber-green/20 flex-1 min-w-[120px]">
-                  <div className="text-cyber-green text-3xl font-bold">10+</div>
+                  <div className="text-cyber-green text-3xl font-bold">25+</div>
                   <div className="text-sm text-cyber-light/70">Challenging Tasks</div>
                 </div>
                 
                 <div className="bg-cyber-dark rounded-lg p-4 border border-cyber-green/20 flex-1 min-w-[120px]">
-                  <div className="text-cyber-green text-3xl font-bold">100+</div>
+                  <div className="text-cyber-green text-3xl font-bold">200+</div>
                   <div className="text-sm text-cyber-light/70">Teams Expected</div>
                 </div>
                 
                 <div className="bg-cyber-dark rounded-lg p-4 border border-cyber-green/20 flex-1 min-w-[120px]">
-                  <div className="text-cyber-green text-3xl font-bold">₹1.4L</div>
+                  <div className="text-cyber-green text-3xl font-bold">₹ 1Laks</div>
                   <div className="text-sm text-cyber-light/70">Prize Pool</div>
                 </div>
               </div>

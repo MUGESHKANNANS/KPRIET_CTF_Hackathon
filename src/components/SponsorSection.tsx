@@ -31,7 +31,7 @@ const logos = [
 
 const SponsorSection = () => {
   return (
-    <section className="py-16 md:py-20 relative">
+    <section className="py-16 md:py-20 relative" id="sponsors">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           <span className="text-white">OUR</span>
@@ -63,7 +63,7 @@ const SponsorSection = () => {
             Contact us to discuss sponsorship opportunities.
           </p>
           <a 
-            href="mailto:exploit-x@kpriet.ac.in" 
+            href="mailto:exploitx@kpriet.ac.in" 
             className="px-8 py-3 rounded-md text-cyber-green font-bold bg-transparent border-2 border-cyber-green hover:bg-cyber-green/10 transition duration-300 inline-block"
           >
             Become a Sponsor

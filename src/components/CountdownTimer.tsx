@@ -70,7 +70,7 @@ const CountdownTimer = () => {
           Register Now
         </a>
         <p className="mt-4 text-cyber-light/80">DON'T HESITATE TO JOIN US</p>
-        <p className="font-medium text-lg">28 March 2025 - Friday</p>
+        <p className="font-medium text-lg">5 April 2025 - Saturday </p>
         
         {/* <div className="mt-5 text-sm inline-block bg-cyber-dark/60 p-4 rounded-lg border border-cyber-green/20">
           <h4 className="text-cyber-green font-bold mb-2 text-md">Every Participant Gets:</h4>

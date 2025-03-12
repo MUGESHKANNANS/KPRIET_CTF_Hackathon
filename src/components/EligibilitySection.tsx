@@ -33,18 +33,18 @@ const EligibilitySection = () => {
                   <div className="mr-3 mt-1 text-cyber-green">→</div>
                   <span>College/University Students</span>
                 </li>
-                <li className="flex items-start">
+                {/* <li className="flex items-start">
                   <div className="mr-3 mt-1 text-cyber-green">→</div>
                   <span>Working Professionals in IT</span>
-                </li>
-                <li className="flex items-start">
+                </li> */}
+                {/* <li className="flex items-start">
                   <div className="mr-3 mt-1 text-cyber-green">→</div>
                   <span>Security Researchers</span>
                 </li>
                 <li className="flex items-start">
                   <div className="mr-3 mt-1 text-cyber-green">→</div>
                   <span>Cybersecurity Enthusiasts</span>
-                </li>
+                </li> */}
               </ul>
               
               <a 

@@ -4,7 +4,7 @@ import { ChevronRight, Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linked
 
 const FooterSection = () => {
   const registrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSfbOwUKpNHMJl7zOQIv0fEyXiq0Nj095tSdxOZh7XITBpwqdA/viewform";
-  const sponsorEmail = "exploit-x@kpriet.ac.in";
+  const sponsorEmail = "exploitx@kpriet.ac.in";
   
   return (
     <footer className="bg-cyber-darker">
@@ -65,7 +65,7 @@ const FooterSection = () => {
               <FooterLink href="/#eligibility">Eligibility</FooterLink>
               <FooterLink href="/#rules">Rules</FooterLink>
               <FooterLink href="/#why-join">Why Join</FooterLink>
-              <FooterLink href="/#sponsors">Sponsors</FooterLink>
+              {/* <FooterLink href="/#sponsors">Sponsors</FooterLink> */}
               <FooterLink href={registrationLink}>Register Now</FooterLink>
             </ul>
           </div>
@@ -81,7 +81,7 @@ const FooterSection = () => {
               </li>
               <li className="flex items-start">
                 <Phone className="text-cyber-green mr-3 mt-1 flex-shrink-0" size={18} />
-                <span className="text-cyber-light/70">+91-422-2635600</span>
+                <span className="text-cyber-light/70">+91 63856 63699</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="text-cyber-green mr-3 mt-1 flex-shrink-0" size={18} />
@@ -93,7 +93,7 @@ const FooterSection = () => {
               </li>
             </ul>
             
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-cyber-green font-bold text-xl mb-4">Sponsors</h4>
               <p className="text-cyber-light/70 mb-4">
                 Ec-Council (₹40,000 voucher)
@@ -105,7 +105,7 @@ const FooterSection = () => {
                 <span>Become a Sponsor</span>
                 <ChevronRight size={16} className="ml-1" />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         

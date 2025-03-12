@@ -1,12 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import { Calendar, Shirt, Utensils, Gift, Mail ,Ticket,Package } from 'lucide-react';
 import { FaTshirt } from 'react-icons/fa';
+// import '../app.css'
+
 
 
 const HeroSection = () => {
   const networkRef = useRef<SVGSVGElement>(null);
   const registrationLink = "https://docs.google.com/forms/d/e/1FAIpQLSfbOwUKpNHMJl7zOQIv0fEyXiq0Nj095tSdxOZh7XITBpwqdA/viewform";
-  const sponsorEmail = "exploit-x@kpriet.ac.in";
+  const sponsorEmail = "exploitx@kpriet.ac.in";
   
   useEffect(() => {
     if (!networkRef.current) return;
@@ -74,7 +76,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen pt-24 overflow-hidden" id="home">
+    <section className="relative min-h-screen pt-24 overflow-hidden  mt-12" id="home">
       {/* Background network animation */}
       <svg ref={networkRef} className="absolute inset-0 w-full h-full z-0 opacity-30" />
       
@@ -82,7 +84,7 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-12 md:mb-0">
             <div className="space-y-6 md:pr-12">
-              <div className="inline-flex items-center py-1 px-3 rounded-full bg-cyber-green/10 border border-cyber-green/20 text-cyber-green text-sm font-medium mb-4 opacity-0 animate-fade-in-delay-1">
+            <div className="inline-flex items-center py-1 px-3 rounded-full bg-cyber-green/10 border border-cyber-green/20 text-cyber-green text-sm font-medium mb-4 opacity-0 animate-fade-in-delay-1">
                 <span className="mr-2">INTERNATIONAL-LEVEL CYBER QUEST</span>
               </div>
               <div className="flex items-center mb-4">
@@ -96,32 +98,30 @@ const HeroSection = () => {
                   </span>
                 </p>
               </div>
+              
               <div className="flex items-center mb-4">
                 {/* <img src="/placeholder.svg" alt="KPRIET Logo" className="h-14 mr-4" /> */}
-                <h1 className="text-2xl md:text-5xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1">
-                  <span className="block font-exploit text-white">
-                    EXPLOIT-X
-                  </span>
-                  <span className="block text-cyber-green text-glow mt-2 font-exploit">
-                    KPR CTF
-                  </span>
+                <h1 className="text-2xl md:text-5xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1 font-hacked">
+                  <span className="font-exploit text-white">EXPLOIT-X</span>
+                  <span className="text-cyber-green text-glow ml-2 font-exploit">KPR CTF</span>
                 </h1>
+
               </div>
               
-              <p className="text-l text-muted-foreground opacity-0 animate-fade-in-delay-2">
-                Crack. Track. Conquer. South India's standalone offline national-level Capture the Flag cybersecurity competition.
+              <p className="text-2xl text-muted-foreground opacity-0 animate-fade-in-delay-2">
+                Crack. Track. Conquer.
               </p>
               
               <div className="flex items-center space-x-4 opacity-0 animate-fade-in-delay-3">
                 <div className="flex items-center space-x-2 text-cyber-green md:text-xl">
                   <Calendar size={18} />
-                  <span className="font-medium">05 Saturday - April 2025</span>
+                  <span className="font-medium">05  April 2025 - Saturday</span>
                 </div>
               </div>
               
               <div className="opacity-0 animate-fade-in-delay-3">
                 <p className="text-xl font-bold mb-1">PRIZES WORTH</p>
-                <p className="text-4xl md:text-5xl font-bold text-cyber-green text-glow mb-3">INR: 1,00,000 + ₹40,000</p>
+                <p className="text-4xl md:text-4xl font-bold text-cyber-green text-glow mb-3">INR: 1,00,000 + 50,000 <span className='text-white text-sm'>( voucher )</span></p>
                 <p className="text-sm text-cyber-light/70 mb-1">(₹40,000 voucher by Ec-Council)</p>
                 <p className="text-xl md:s text-muted-foreground mb-6">Registration Fee: ₹550/ $10 per head</p>
                 <div className="flex flex-col sm:flex-row gap-4">
