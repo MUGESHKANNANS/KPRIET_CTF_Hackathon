@@ -48,9 +48,9 @@ const CountdownTimer = () => {
   return (
     <div className="flex flex-col items-center justify-center py-10 md:py-16">
       <h2 className="text-2xl md:text-5xl font-bold mb-8 text-center">
-        <span className="text-glow text-cyber-green">PUT YOUR SKILLS</span>
-        <span className="ml-2 text-white">/</span>
-        <span className="ml-2 text-cyber-green text-glow">ON THE TEST</span>
+        <span className="text-glow ">Registration </span>
+        <span className="ml-2 text-white"></span>
+        <span className="ml-2 text-cyber-green text-glow">Deadline</span>
       </h2>
       
       <div className="flex space-x-3 md:space-x-10">
