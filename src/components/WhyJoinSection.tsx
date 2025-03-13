@@ -54,7 +54,7 @@ const WhyJoinSection = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="w-full md:w-1/2 mb-8 md:mb-0">
               <img 
-                src="https://media.istockphoto.com/id/1218592795/photo/hacker-using-laptop-and-falling-dollar-bills.jpg?s=2048x2048&w=is&k=20&c=adQehsSBxrSRUqXOFtNPutAUkbNf8kaLv-OMJcZJ-Xo=" 
+                src="https://img.freepik.com/premium-photo/scammer-hiding-computer-screen-with-stolen-money-symbols-floating-around-copy-space_1298745-12340.jpg" 
                 alt="Hacker with glowing keyboard" 
                 className="rounded-lg w-full max-w-md mx-auto h-auto shadow-lg shadow-cyber-green/10"
               />

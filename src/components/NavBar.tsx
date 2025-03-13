@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import kprlogo from "../assets/Logo Variation-updated-16-White (1).png";
+import logo6 from "../assets/logo6.png";
 
 const sponsorLogos = [
+  logo6,
   "https://netlabssolution.com//wp-content/uploads/2023/01/34449E85-0BFE-4271-85B4-044ACC07A2DD.png",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEF5YIV3KX43ofP_2zx-IhIQ9wiLFqZ5qI7w&s",
   "https://www.sparkouttech.com/web-stories/assets/web-logo.png",
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/IEEE_logo.svg/320px-IEEE_logo.svg.png",
   "https://ieeecs-media.computer.org/tc-media/sites/27/2020/03/05191106/IEEE-CS_LogoTM-white.png",
+  
 ];
 
 const NavBar = () => {
