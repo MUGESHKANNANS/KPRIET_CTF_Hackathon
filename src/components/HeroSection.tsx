@@ -121,8 +121,9 @@ const HeroSection = () => {
               
               <div className="opacity-0 animate-fade-in-delay-3">
                 <p className="text-xl font-bold mb-1">PRIZES WORTH</p>
-                <p className="text-4xl md:text-4xl font-bold text-cyber-green text-glow mb-3">INR: 1,00,000 + 50,000 <span className='text-white text-sm'>( voucher )</span></p>
-                <p className="text-sm text-cyber-light/70 mb-1">(₹40,000 voucher by Ec-Council)</p>
+{/*                <p className="text-4xl md:text-4xl font-bold text-cyber-green text-glow mb-3">INR: 1,00,000 + 50,000 <span className='text-white text-sm'>( voucher )</span></p> */}
+                <p className="text-4xl md:text-4xl font-bold text-cyber-green text-glow mb-3">INR: 1,00,000 </p>
+                <p className="text-sm text-cyber-green text-glow mb-1 ">(₹40,000 voucher by Ec-Council)</p>
                 <p className="text-xl md:s text-muted-foreground mb-6">Registration Fee: ₹550/ $10 per head</p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a 
