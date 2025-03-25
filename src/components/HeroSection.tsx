@@ -182,7 +182,7 @@ const HeroSection = () => {
                       <div className="text-xs text-muted-foreground">Challenges</div>
                     </div>
                     <div className="text-center mb-3 w-1/2 md:w-auto">
-                      <div className="text-3xl font-bold text-cyber-green">24h</div>
+                      <div className="text-3xl font-bold text-cyber-green">8h</div>
                       <div className="text-xs text-muted-foreground">Duration</div>
                     </div>
                     <div className="text-center mb-3 w-1/2 md:w-auto">
