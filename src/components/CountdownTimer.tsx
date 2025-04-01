@@ -8,7 +8,7 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     // Set target date to April 5, 2025
-    const targetDate = new Date('March 31, 2025 00:00:00').getTime();
+    const targetDate = new Date('April 02, 2025 00:00:00').getTime();
 
     const intervalId = setInterval(() => {
       const now = new Date().getTime();
